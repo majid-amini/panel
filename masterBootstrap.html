@@ -22,10 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/custom.css" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+   
 
     <title>master</title>
   </head>
@@ -42,11 +39,11 @@
 
       <div class="lg-background">
         <div
-          class="min-h-100 d-flex light-gray-color rounded-2 shadow-4 overflow-hidden mx-auto max-w-48"
+          class="min-h-100 d-md-flex light-gray-color rounded-2 shadow-4 overflow-hidden mx-auto max-w-48"
         >
-          <div class="d-hidden w-50">
+          <div class="w-100 w-md-50 d-none d-md-block">
             <div
-              class="d-flex justify-content-center align-items-center h-100 login-background w-100"
+              class="d-none d-md-flex justify-content-center align-items-center h-100 login-background w-100"
             >
               <img
                 class="mx-auto h-5rem w-auto"
@@ -56,16 +53,17 @@
             </div>
           </div>
 
-          <div class="max-w-24 w-100 p-4 light-gray-color rounded-2">
+          <div class="maxw-md-24 w-md-100 w-100 p-4 light-gray-color rounded-2">
             <div>
-              <h2 class="mt-6 text-right fs-5 fw-bold text-primary-800">
+              <h2 class="mt-6 text-right fs-4 text-primary-700 mb-3">
                 ورود به پیشخوان
               </h2>
             </div>
 
             <div>
               <p class="text-right text-secondary">
-                <span class="font-medium text-gray-600 hover:text-indigo-500"
+                <span
+                  class="font-medium text-gray-600 hover:text-indigo-500 mb-3"
                   >برای ورود به سایت شماره موبایل یا ایمیل خود را وارد
                   نمایید</span
                 >
@@ -77,19 +75,17 @@
                   <span></span>
                 </div>
 
-                <div class="rounded-2 shadow-sm space-y-0.5">
-                  <div class="position-relative">
+                <div class="rounded-2 shadow-sm">
+                  <div class="position-relative my-4">
                     <input
                       name="phone"
                       value=""
                       type="text"
                       id="floating_outlined"
-                      class="d-block border border-2 px-2 py-1 w-100 fs-6 text-secondary bg-transparent rounded-2 border-1 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      class="custom-input px-2 py-2 rounded-2"
                       placeholder=" "
                     />
-                    <label
-                      for="floating_outlined"
-                      class="position-absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] peer-focus:light-gray-color px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 right-1"
+                    <label for="floating_outlined" class="custom-label"
                       >شماره موبایل یا آدرس ایمیل</label
                     >
                   </div>
@@ -99,19 +95,19 @@
                   <span> </span>
                 </div>
 
-                <div class="rounded-2 mt-3 shadow-sm space-y-0.5">
+                <div class="rounded-2 mt-3 shadow-sm">
                   <div class="position-relative">
                     <input
                       name="password"
                       value=""
                       type="password"
                       id="floating_outlined"
-                      class="d-block border border-2 px-2 py-1  w-100 text-sm text-gray-900 bg-transparent rounded-2 border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer outline-none"
+                      class="custom-input px-2 py-2 rounded-2"
                       placeholder=" "
                     />
                     <label
                       for="floating_outlined"
-                      class="position-absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] peer-focus:bg-[#e8f0fe] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 right-1"
+                      class="custom-label"
                       >رمز عبور</label
                     >
                   </div>
@@ -124,7 +120,7 @@
                 <div>
                   <button
                     type="submit"
-                    class="position-relative w-100 d-flex justify-content-center align-items-center mt-4 py-2 px-4 border border-transparent text-sm font-medium rounded-2 text-white bg-primary-700 hover:bg-primary-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    class="submit-button position-relative w-100 d-flex justify-content-center align-items-center mt-4 py-2 px-4 border border-transparent text-sm font-medium rounded-2 text-white bg-primary-700 hover:bg-primary-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     <span
                       class="position-absolute start-0 inset-y-0 flex items-center ps-3"

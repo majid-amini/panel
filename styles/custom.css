@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "iranyekan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/iranyekanwebmediumfanum.eot");
+  src: url("../fonts/iranyekanwebmediumfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/iranyekanwebmediumfanum.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../fonts/iranyekanwebmediumfanum.ttf") format("truetype");
+}
+html {
+  font-family: "iranyekan";
+}
+a {
+  text-decoration: none;
+}
 .h-5rem {
   height: 5rem;
 }
@@ -5,33 +22,112 @@
   width: 1.25rem;
 }
 .h-12-5rem {
-  height: 1.25rem ;
+  height: 1.25rem;
 }
 .max-w-24 {
-max-width: 24rem;
+  max-width: 24rem;
 }
 .max-w-48 {
-    max-width: 48rem;
+  max-width: 48rem;
 }
 .w-1rem {
-    width: 1rem;
+  width: 1rem;
 }
 .login-background {
-    background: url('../img/login.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+  background: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .light-gray-color {
-    background-color: #e8f0fe;
+  background-color: #e8f0fe;
 }
 .bg-primary-700 {
-    background-color: #232dbd;
+  background-color: #232dbd;
 }
-.floating_outlined:focus {
-    outline: none;
+.text-primary-700 {
+  color: #232dbd;
 }
-a{
-    text-decoration: none;
+
+.square_box {
+  position: absolute;
+  transform: rotate(45deg);
+  border-top-left-radius: 45px;
 }
+.box_four {
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    #95aad0 0%,
+    rgb(242 242 242 / 50%) 100%
+  );
+  width: 560px;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%) rotate(47deg);
+  height: 500px;
+  border-radius: 45px;
+}
+/* .form-control:focus {
+    border-color: #ced4da;
+    outline: none !important;
+    box-shadow: none; 
+} */
+
+/* .peer_label {
+  font-size: 14px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: #2d2d2d !important;
+  transition: all 0.3 ease-in-out;
+  top: 0;
+  z-index: 10;
+  transform-origin: top !important;
+  border: none;
+}
+.test:focus .peer_label {
+  background-color: orange !important;
+  transform: translateY(10px) scale(0.9)!important;
+  color: red !important;
+  padding: 10px;
+} */
+
+.custom-input {
+  border-width: 2px;
+  padding: 2.5px;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: transform 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.custom-input:focus + .custom-label {
+  transform: translate(0, -15px) scale(0.75);
+}
+
+.custom-label {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+  transform-origin: top left;
+  transition: transform 0.3s;
+}
+
+.custom-input:focus + .custom-label,
+.custom-input:not(:placeholder-shown) + .custom-label {
+  background-color: #e8f0fe;
+  color: #06f;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+.submit-button:hover {
+  background-color: #10166a;
+}
+/* duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] peer-focus:light-gray-color px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 right-1 */
